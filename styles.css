@@ -1,0 +1,83 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: url(./background.jpg) no-repeat center;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 15%;
+  padding: 5rem 5rem;
+  height: 100%;
+  background-color: black;
+  backdrop-filter: blur(20px);
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.sidebar:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 25%;
+}
+.sidebar nav {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav ul li {
+  margin-top: 2rem;
+}
+
+.sidebar .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+}
+.sidebar .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  transition: 0.3s ease-in-out;
+}
+.user:hover {
+  transform: scale(1.1);
+  color: orangered;
+}
+a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.3rem;
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+  text-wrap: nowrap;
+}
+
+a:hover {
+  border-bottom: 3px solid orangered;
+}
